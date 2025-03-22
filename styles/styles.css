@@ -179,21 +179,21 @@ footer .social-links a:hover {
 
 .cart-icon img {
     vertical-align: middle;
-    filter: brightness(0) invert(1); /* Makes the icon white */
-    transition: filter 0.3s ease; /* Smooth transition for hover effect */
+    filter: brightness(0) invert(1); 
+    transition: filter 0.3s ease; 
 }
 
 .cart-icon img:hover {
-    filter: brightness(0.8) invert(1); /* Slightly dim the icon on hover */
+    filter: brightness(0.8) invert(1); 
 }
 
 .cart-icon svg {
-    fill: white; /* Makes the SVG icon white */
-    transition: fill 0.3s ease; /* Smooth transition for hover effect */
+    fill: white; 
+    transition: fill 0.3s ease; 
 }
 
 .cart-icon svg:hover {
-    fill: #f4a261; /* Changes color on hover */
+    fill: #f4a261; 
 }
 
 #cart-count {
@@ -206,4 +206,29 @@ footer .social-links a:hover {
     font-weight: bold;
     padding: 2px 6px;
     border-radius: 50%;
+}
+.product-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-item p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    background-color: #264653;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #2a9d8f;
+    transform: scale(1.05);
 }
