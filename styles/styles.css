@@ -1,0 +1,209 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav menu */
+    align-items: center; /* Vertically center items */
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+}
+
+header nav {
+    margin: 0;
+}
+
+header .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem; /* Space between menu items */
+    justify-content: right;
+}
+
+header .nav-links li {
+    display: inline;
+}
+
+header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .nav-links a:hover,
+header .nav-links a.active {
+    background-color: #f4a261;
+    color: #333;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .social-links li {
+    display: inline;
+}
+
+footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #f4a261;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(to right, #f4a261, #e76f51);
+    color: #fff;
+    border-bottom: 5px solid #264653;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background-color: #264653;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #2a9d8f;
+    transform: scale(1.05);
+}
+
+/* Image Gallery */
+.image-gallery {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.image-gallery h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.image-gallery .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+
+.cart-icon {
+    position: relative;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.cart-icon img {
+    vertical-align: middle;
+    filter: brightness(0) invert(1); /* Makes the icon white */
+    transition: filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cart-icon img:hover {
+    filter: brightness(0.8) invert(1); /* Slightly dim the icon on hover */
+}
+
+.cart-icon svg {
+    fill: white; /* Makes the SVG icon white */
+    transition: fill 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cart-icon svg:hover {
+    fill: #f4a261; /* Changes color on hover */
+}
+
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #e63946;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
